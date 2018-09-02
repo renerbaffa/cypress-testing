@@ -3,24 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jest-dom": "1.12.0",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.5",
     "react-select": "^2.0.0",
+    "react-spinners": "^0.4.5",
     "react-testing-library": "5.0.0",
     "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
     "styled-components": "3.4.5"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.0",
+    "jest-dom": "^1.12.0",
+    "react-testing-library": "^5.0.0",
+    "redux-devtools-extension": "^2.13.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "cypress": "^3.1.0",
-    "react-testing-library": "^5.0.0"
   }
 }
