@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, within } from './helpers/testing';
+
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('App landing page', () => {
+  it('should render ', () => {
+    const { getByTestId } = render(<App />);
+    const target = within(getByTestId('main-div'));
+    console.log(target);
+  });
 });
